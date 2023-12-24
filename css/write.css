@@ -1,0 +1,124 @@
+.head_box{height: 100%;}
+.flex{display:flex;}
+.flex--row{flex-direction:row;}
+.flex--column{flex-direction:column;}
+.flex--align-center{align-items:center;}
+.input_box{
+    display:flex;
+    width:100%;
+    margin:8px 16px 8px 8px;
+    border:1px solid #ccc;
+    border-radius:21px;
+    background-color:#fff;
+}
+input{
+    border-style: none;
+    outline: none;
+}
+.title_input{
+    width:100%;
+    margin-left:4px;
+    border-radius:18px;
+    padding:8px;
+    font-size:18px;
+    line-height:24px;
+    background-color:#fff;
+}
+.text-input{
+    display:block;
+    width:100%;
+    height:36px;
+    padding:3px 12px;
+    font-size:inherit;
+    line-height:1.5;
+    color:inherit;
+    background-color:#fff
+}
+.warntext{
+    float:right;
+    line-height:40px;
+    font-size:20px;
+    margin-right:8px;
+}
+button{
+    border-style: none;
+    outline: none;
+}
+.btn_box{
+    padding:8px 32px 8px 0;
+}
+.btn_publish{
+    height: 45px;
+    padding:0 20px;
+    margin-left: 20px;
+    font-size:16px;
+    color:#fff;
+    border:none;
+    border-radius:18px;
+    white-space:nowrap;
+    background:linear-gradient(92deg,#ffba40,#ff503e 37%,#ff2f50 81%,#ff1b40);
+    cursor:pointer;
+}
+.btn_publish:hover {box-shadow: 0 0 10px rgba(0, 0, 0, .5) inset;}
+
+#choice{
+    width: 110px;
+    height: 45px;
+    color:#fc5531;
+    background-color:#fff5f2;
+    /* 去掉三角 */
+    appearance:none;
+    -moz-appearance:none; /* 兼容Firefox */
+    -webkit-appearance:none; /* 兼容Safari 和 Chrome */
+    font-size:16px;
+    text-align:center;
+    text-align-last: center;
+    border-radius:18px;
+    border-style: none;
+    outline: none;
+    cursor:pointer;
+}
+.pannel{
+    padding: 0;
+    margin: 0;
+    width: 100%;
+}
+.nav_box{
+    border:1px solid #ccc;
+    display: flex;
+    flex-direction:row;
+    width: 100%;
+    justify-content: left;
+    background-color: white;
+}
+#btn1,#btn2,#btn3,#btn4{
+    border-radius:18px;
+    padding:0 30px;
+    margin-left: 30px;
+    font-size:16px;
+    color:#fff;
+    height: 54px;
+    margin:1px;
+    background: #aaa;
+    cursor:pointer;overflow:hidden;
+}
+.layout_box{
+    display: flex;
+    justify-content: center;
+}
+#editor {
+    flex: 5;
+    height: 750px;
+    background-color: white;
+    font-size: 18px;
+    margin-top: 10px;
+}  
+#preview {
+    padding: 0,0,0,20px;
+    flex: 5;
+    height: 750px;
+    background-color: #f9f1db;
+    border: rosybrown 1px solid;
+    margin-top: 10px;
+    margin-left: 10px;
+} 

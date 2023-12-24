@@ -1,38 +1,30 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <link rel="stylesheet" href="css/style.css">
-    <img src="C:\Users\86198\Desktop\R-C.jfif">
-    <title>谷歌搜索</title>
-    <style>
-        /* 样式与Google类似 */
-        body {
-            text-align: center;
-        }
-        .search-bar {
-            margin: 20px auto;
-        }
-        .search-bar input[type="text"] {
-            border-radius: 10px;
-            padding: 5px;
-            width: 300px;
-        }
-        .search-bar input[type="submit"] {
-            margin-top: 10px;
-            background-color: #4285F4;
-            color: white;
-            border: none;
-            padding: 8px 20px;
-            border-radius: 5px;
-        }
-    </style>
-</head>
-<body>
-    <form action="https://www.google.com/search" method="get" class="search-bar">
-        <input type="text" name="q" placeholder="输入查询" />
-        <br />
-        <input type="submit" value="谷歌搜索" />
-    </form>
-    <a href="google_image_search.html">图片搜索</a> | <a href="google_advanced_search.html">高级搜索</a>
-</body>
+<html>
+<!--
+    简洁美观
+    （验证进入）
+    好看的背景/动态背景
+-->
+    <head>
+        <!--按实际尺寸显示，无任何缩放。-->
+        <meta charset="UTF-8">
+        <title>微型个人博客</title>
+        <script src="./js/wei.js"></script>
+        <link href="./css/wei.css" rel="stylesheet">
+    </head>
+    <body>
+        <div class="main">
+            <div class="cenetrframe">
+                <p class="title">Welcome to Here!</p>
+                <div class="photos">
+                    <div class="b" style="--i:2;background-image: url(./static/翻页动画/1.gif);"></div>
+                    <div class="c" style="--i:4;--s:1; background-image: url(./static/翻页动画/2.gif);"></div>
+                    <div class="d" style="--i:3;--s:2; background-image: url(./static/翻页动画/3.gif);"></div>
+                    <div class="e" style="--i:2;--s:3; background-image: url(./static/翻页动画/4.gif);"></div>
+                    <div class="f" style="--i:1;--s:4; background-image: url(./static/翻页动画/5.gif);"></div>
+                </div>
+                <a href="./main.html"><div class="enterBut">进入空间</div></a>
+            </div>
+            </div>
+        </div>
+    </body>
 </html>

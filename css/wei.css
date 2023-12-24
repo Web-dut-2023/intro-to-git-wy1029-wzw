@@ -1,0 +1,93 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+a{
+    text-decoration:none;
+}
+.main{
+    /* 渐变轴为180度，从粉色渐变到蓝色 */
+    background:  linear-gradient(180deg,#ead6ee,#a0f1ea)fixed;
+    height: 100%;
+    width: 100%;
+}
+/*输入框*/
+.cenetrframe{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 600px;
+    height: 700px;
+    background: rgba(0,0,0,0.2);
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto ;
+    /*添加边框圆角*/
+    border-radius: 10px;
+    /*添加边距挤下去*/
+    padding: 30px 0;
+    box-sizing: border-box;
+    /*添加阴影*/
+    box-shadow: 0 0 5px 5px rgba(0,0,0,0.2);
+}
+.title{
+    text-align: center;
+    color: linear-gradient(45deg, blue, red);
+    font-size: 38px;
+}
+.photos{
+    margin-top: 50px;
+    width: 300px;
+    height: 450px;
+    transform-style: preserve-3d;
+    perspective: 1000px;
+    transition: .8s;
+}
+.b,.c,.d,.e,.f{
+    width: 280px;
+    height: 440px;
+    position: absolute;
+    /* 这是翻页的起点，在左边 */
+    transform-origin: left;
+    background-size: cover;
+    /* 这是翻页时元素之间的延迟 */
+    transition: calc(var(--i)*.3s);
+    /* 这是翻页时元素的层级 */
+    z-index: calc(var(--i)*99);
+}
+.b,.c{
+    border: solid 20px #576574;
+    border-left: none;
+    top: -20px;
+    border-radius: 0 20px 20px 0;
+}
+.photos:hover .b{
+    border-left: #576574 20px solid;
+}
+.photos:hover .c,.photos:hover .d,.photos:hover .e,.photos:hover .f{
+    transform: rotateY(-180deg);
+    /* 此时翻页的顺序会倒过来，所以我们的延迟和层级也要反一下 */
+    transition: calc(var(--s)*.4s);
+    z-index: calc(var(--s)*-99);
+}
+.photos:hover{
+    transform: translateX(100px);
+}
+.enterBut {
+    margin-top: 50px;
+    width: 200px;
+    height: 50px;
+    border-radius: 50px;
+    background-image: linear-gradient(to right, #c979d4, #fa719d);
+    text-align: center;
+    padding-top: 10px;
+    box-sizing: border-box;
+    font-size: 20px;
+    cursor: pointer;
+}
+.enterBut:hover {
+    box-shadow: 0 0 10px rgba(0, 0, 0, .5) inset;
+}

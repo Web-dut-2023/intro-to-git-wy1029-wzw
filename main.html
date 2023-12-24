@@ -1,0 +1,44 @@
+<!Doctype html>
+<!--
+    布局
+    导航栏
+    内容呈现
+-->
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>welcome</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="./css/main.css" rel="stylesheet">
+    </head>
+    <body>
+        <script src="./js/main.js"></script>
+        <div class="container">
+            <div class="row">
+                <div class="elem" id="head"></div>
+            </div>
+            <div class="row">
+                <div class="elem tall-elem">
+                    <div class="child1" id="photo">
+                        <img src="./static/头像.jpg">
+                    </div>
+                    <div class="child2" id="option">
+                        <ul>
+                            <li><a href="javascript:void(0);" onclick="main_page()">主页</a></li>
+                            <li><a href="javascript:void(0);" onclick="photo()">分类</a></li>
+                            <li><a href="javascript:void(0);" onclick="write_bk()">写博客</a></li>
+                            <li><a href="javascript:void(0);" onclick="about_me()">关于我</a></li>
+                        </ul>
+                    </div>
+                    <div class="child3">
+                        <p>2021/02</p>
+                    </div>
+                </div>
+                <div id="content" class="elem tall-elem" style="flex:3;">
+                   
+                </div>
+            </div>
+        </div>
+    </body>
+    <script type="text/javascript" src="./js/main.js"></script>
+</html>
